@@ -23,7 +23,7 @@ const Register = () => {
       console.log(name, email, password);
 
       navigate("/login");
-      toast.success("login successfully");
+      toast.success("Registred Successfully");
       console.log(res.data);
     } catch (error) {
       toast.error(error.response?.data?.message || "Something went wrong");
@@ -52,7 +52,7 @@ const Register = () => {
             required
           />
 
-          <label htmlFor="">Name</label>
+          <label htmlFor="">Password</label>
           <input
             type="password"
             placeholder="John Doe"
